@@ -1,8 +1,8 @@
 {
-    "name": "angular-soundmanager2",
+    "name": "angular-soundmanager3",
     "version": "0.5.6",
-    "description": "SoundManager2 Music Player for AngularJs",
-    "main": "src/angular-soundmanager2.js",
+    "description": "SoundManager3 Music Player for AngularJs",
+    "main": "src/angular-soundmanager3.js",
     "directories": {
         "example": "example",
         "dist": "dist",
@@ -10,12 +10,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:perminder-klair/angular-soundmanager2.git"
+        "url": "git@github.com:NeoMurderer/angular-soundmanager3.git"
     },
     "keywords": [
         "angular",
         "angularjs",
-        "soundmanager2",
+        "soundmanager3",
         "music",
         "player",
         "music player"
@@ -23,9 +23,9 @@
     "author": "Parminder Klair",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/perminder-klair/angular-soundmanager2/issues"
+        "url": "https://github.com/NeoMurderer/angular-soundmanager3/issues"
     },
-    "homepage": "https://github.com/perminder-klair/angular-soundmanager2",
+    "homepage": "https://github.com/NeoMurderer/angular-soundmanager3",
     "devDependencies": {
        "grunt": "~0.4.5",
        "grunt-contrib-jshint":  "~0.10.0",

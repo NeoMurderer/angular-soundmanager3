@@ -4,18 +4,18 @@
     "authors": [
         "Parminder Klair"
     ],
-    "description": "SoundManager2 Music Player for AngularJs",
-    "main": "dist/angular-soundmanager2.js",
+    "description": "SoundManager3 Music Player for AngularJs",
+    "main": "dist/angular-soundmanager3.js",
     "keywords": [
         "angular",
         "angularjs",
-        "soundmanager2",
+        "soundmanager3",
         "music",
         "player",
         "music player"
     ],
     "license": "MIT",
-    "homepage": "https://github.com/perminder-klair/angular-soundmanager2",
+    "homepage": "https://github.com/NeoMurderer/angular-soundmanager3",
     "ignore": [
         "**/.*",
         "node_modules",

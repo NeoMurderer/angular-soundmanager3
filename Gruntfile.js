@@ -41,7 +41,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'dist/angular-soundmanager2.min.js': ['dist/angular-soundmanager2.js']
+          'dist/angular-soundmanager3.min.js': ['dist/angular-soundmanager3.js']
         }
       }
     },
