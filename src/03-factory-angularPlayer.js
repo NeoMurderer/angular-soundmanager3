@@ -1,14 +1,15 @@
 ngSoundManager.factory('angularPlayer', ['$rootScope', '$log',
     function($rootScope, $log) {
-        
+
         var currentTrack = null,
             repeat = false,
+            shuffle = false,
             autoPlay = true,
             isPlaying = false,
             volume = 90,
             trackProgress = 0,
             playlist = [];
-        
+
         return {
             /**
              * Initialize soundmanager,
@@ -255,12 +256,18 @@ ngSoundManager.factory('angularPlayer', ['$rootScope', '$log',
                 this.initPlayTrack(trackId);
             },
             nextTrack: function() {
+                var nextTrackKey;
                 if(this.getCurrentTrack() === null) {
                     $log.debug("Please click on Play before this action");
                     return null;
                 }
                 var currentTrackKey = this.getIndexByValue(soundManager.soundIDs, this.getCurrentTrack());
-                var nextTrackKey = +currentTrackKey + 1;
+                if(shuffle) {
+                  nextTrackKey = Math.floor(Math.random()*soundManager.soundIDs.length);
+                }
+                else {
+                  nextTrackKey = +currentTrackKey + 1;
+                }
                 var nextTrack = soundManager.soundIDs[nextTrackKey];
                 if(typeof nextTrack !== 'undefined') {
                     this.playTrack(nextTrack);
@@ -309,8 +316,19 @@ ngSoundManager.factory('angularPlayer', ['$rootScope', '$log',
                 }
                 $rootScope.$broadcast('music:repeat', repeat);
             },
+            shuffleToggle: function() {
+                if(shuffle === true) {
+                    shuffle = false;
+                } else {
+                    shuffle = true;
+                }
+                $rootScope.$broadcast('music:shuffle', shuffle);
+            },
             getRepeatStatus: function() {
                 return repeat;
+            },
+            getShuffleStatus: function() {
+                return shuffle;
             },
             getVolume: function() {
                 return volume;
