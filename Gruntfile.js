@@ -8,7 +8,7 @@ module.exports = function (grunt) {
       },
       dist: {
         src: [
-          'src/modules/soundmanager2.js',
+          'src/modules/soundmanager3.js',
           'src/01-app.js',
           'src/02-filter-humanTime.js',
           'src/03-factory-angularPlayer.js',
@@ -30,8 +30,8 @@ module.exports = function (grunt) {
           'src/19-directive-volumeBar.js',
           'src/20-directive-playPauseToggle.js',
           'src/21-directive-shuffleMusic.js',
-        ],
-        dest: 'dist/angular-soundmanager2.js'
+        ], 
+        dest: 'dist/angular-soundmanager3.js'
       }
     },
 
