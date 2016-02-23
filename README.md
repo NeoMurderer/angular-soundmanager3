@@ -20,13 +20,13 @@ SoundManager 2 brings reliable cross-platform audio to JavaScript.
 install via bower:
 
 ```
-bower install angular-soundmanager2
+bower install angular-soundmanager3
 ```
 
 include required file:
 
 ```
-dist/angular-soundmanager2.js
+dist/angular-soundmanager3.js
 ```
 
 include the angularSoundManager as a dependency for your app.
@@ -59,7 +59,7 @@ Take a look at files under `examples` directory for demo and how to create playe
 
 ## Why I created this
 
-There are a couple projects similar to this out there, but none were ideal for me and none of them was using awesome API of SoundManager2.
+There are a couple projects similar to this out there, but none were ideal for me and none of them was using awesome API of SoundManager3.
 
 Feel free to fork this project and amend it according to your needs. This is just an start point!
 
